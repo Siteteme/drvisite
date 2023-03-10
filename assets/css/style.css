@@ -1,0 +1,250 @@
+@import url(style.css);
+
+:root {
+    --primary: #1895A7;
+    --hover: #1894a711;
+    --text: #333333
+}
+
+body {
+
+    font-family: iransansweb;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+#navbar {
+    box-shadow: 0px 0px 26px 0px #1670981f;
+}
+
+/* navbar */
+.navbar {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, auto);
+    /* height: 95px; */
+}
+
+.navbar ul {}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 15px;
+    border-bottom: 3px solid transparent;
+    padding: 0 5px;
+}
+
+.navbar ul li:hover {
+    background-color: var(--hover);
+    border-bottom: 3px solid var(--primary);
+}
+
+.navbar ul li a {
+    line-height: 6;
+    color: var(--primary)
+}
+
+
+.registration {
+    background: linear-gradient(90deg, #1D4076, #1895A7);
+    padding: 10px 13px;
+    border-radius: 50px;
+    color: #fff;
+    font-size: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.registration:hover {
+    background: linear-gradient(90deg, #1895A7, #1D4076);
+}
+
+
+
+
+/* header */
+
+#header {
+    height: 438px;
+    background-image: url('/assets/img/backgroun-light.png'), url('/assets/img/background-intro.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+
+.header {
+    height: 439px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.header p {
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 30px 0;
+}
+
+
+.header .search-bar {
+    margin-top: 25px;
+    background: #fff;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 50px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header .search-bar img {
+    cursor: pointer;
+}
+
+.header .search-bar input {
+    height: 100%;
+    width: 74%;
+    border: none;
+    font-family: iransansweb;
+    font-size: 12px;
+}
+
+.header .search-bar button {
+    background: linear-gradient(90deg, #1D4076, #1895A7);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 10px;
+    font-family: iransansweb;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.header .search-bar button:hover {
+    background: linear-gradient(90deg, #1895A7, #1D4076);
+}
+
+.header .search-bar button .button-text {
+    position: relative;
+    top: -1px;
+
+}
+
+
+.header .search-bar button span img {
+    margin-left: 11px;
+    width: 16px;
+}
+
+
+/* services */
+
+#services {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.services .services-title {
+    text-align: center;
+}
+
+.services .services-title h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.services .services-title h2 span {
+    color: var(--primary);
+}
+
+
+.services .services-items {
+    display: grid;
+    margin-top: 50px;
+    gap: 35px;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: repeat(3, auto);
+}
+
+.services .services-items .services-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    box-shadow: 0 4px 30px 0 #9ba3b128;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.services .services-items .services-item:hover {
+    background-color: #e7e7e7;
+}
+
+.services .services-items .services-item:hover .services-item-desc h3 {
+    color: var(--primary);
+}
+
+.services .services-items .services-item:hover .services-item-desc span {
+    color: var(--primary);
+}
+
+.services .services-items .services-item.center {
+    grid-column: 2;
+}
+
+.services .services-items .services-item .services-item-img img {
+    max-width: 100%;
+}
+
+.services .services-items .services-item .services-item-desc {
+    margin-right: 25px;
+}
+
+.services .services-items .services-item .services-item-desc h3 {
+    font-weight: 500;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.services .services-items .services-item .services-item-desc span {
+    color: #707070;
+    font-size: 15px;
+}
+
+
+
+
+/* article */
+
+.article {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+
+.article a {
+    max-width: 100%;
+}
+
+.article a img {
+    border-radius: 26px;
+    width: 100%;
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999" version="1.1">
+    <defs>
+        <filter id="colorWhite">
+            <feColorMatrix color-interpolation-filter="sRGB" in="SourceGraphic" type="matrix" values="1 0 0 0 0
+                  0 1 0 0 0
+                  0 0 1 0 0
+                  0 0 0 1 0" />
+        </filter>
+    </defs>
+</svg>
