@@ -1,0 +1,203 @@
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 96%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+    .navbar .logo {
+        width: 17%;
+    }
+
+    .navbar .logo img {
+        width: 100%;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin-left: 5px;
+        border-bottom: 3px solid transparent;
+        padding: 0 5px;
+        font-size: .7rem;
+    }
+
+    .registration {
+        background: linear-gradient(90deg, #1D4076, #1895A7);
+        padding: 8px 11px;
+        border-radius: 50px;
+        color: #fff;
+        font-size: 12px;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+
+    .registration:first-child img {
+        max-width: 12px;
+
+    }
+
+    .navbar .menu {
+        margin-right: -45px;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 95px;
+    }
+
+    .navbar .logo {
+        width: 25%;
+    }
+
+    .services .services-items {
+        display: grid;
+        margin-top: 50px;
+        gap: 35px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    .header .search-bar {
+        margin-top: 25px;
+        background: #fff;
+        padding: 5px 7px;
+        border: none;
+        border-radius: 50px;
+        width: 386px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+
+    .header .search-bar button {
+        width: 30%;
+    }
+
+    .services .services-items .services-item .services-item-img img {
+        max-width: 70%;
+    }
+
+    .navbar .logo {
+        width: 150px;
+    }
+
+    .services .services-items .services-item {
+        display: flex;
+        align-items: center;
+        background: white;
+        box-shadow: 0 4px 30px 0 #9ba3b128;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+    .services .services-items .services-item .services-item-desc h3 {
+        font-weight: 500;
+        color: var(--primary);
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .services .services-items .services-item .services-item-desc span {
+        color: #707070;
+        font-size: 10px;
+    }
+
+    .article {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+    .services .services-items {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        margin-top: 50px;
+        gap: 35px;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+    }
+
+    .services .services-items .services-item .services-item-img img {
+        max-width: 64%;
+    }
+
+    .header .search-bar {
+        display: none;
+    }
+
+    .header .search-bar button {
+        background: linear-gradient(90deg, #1D4076, #1895A7);
+        border: none;
+        border-radius: 50px;
+        padding: 10px 24px;
+        font-family: iransansweb;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-size: 10px;
+        width: 30%;
+    }
+
+    .header .search-bar button .button-text {
+        position: relative;
+        top: -1px;
+        font-size: 8px;
+    }
+
+
+    .header h1 {
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .header p {
+        color: #fff;
+        font-size: .8rem;
+        margin: 30px 0;
+    }
+
+    .article {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .services .services-items .services-item {
+        display: flex;
+        align-items: center;
+        background: white;
+        box-shadow: 0 4px 30px 0 #9ba3b128;
+        padding: 20px;
+        border-radius: 15px;
+        justify-content: center;
+    }
+
+    .navbar .logo {
+        width: 150px;
+    }
+}
