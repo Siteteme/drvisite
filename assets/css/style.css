@@ -195,6 +195,8 @@ body {
     box-shadow: 0 4px 30px 0 #9ba3b128;
     padding: 15px;
     border-radius: 15px;
+    transition: all .3s ease-in-out;
+
 }
 
 .services .services-items .services-item:hover {
@@ -226,11 +228,15 @@ body {
     color: var(--primary);
     margin-bottom: 10px;
     font-size: 18px;
+    transition: all .3s ease-in-out;
+
 }
 
 .services .services-items .services-item .services-item-desc span {
     color: #707070;
     font-size: 15px;
+    transition: all .3s ease-in-out;
+
 }
 
 
@@ -243,13 +249,85 @@ body {
     grid-template-columns: auto auto auto;
     justify-content: space-between;
     gap: 20px;
+    transition: all .3s ease-in-out;
+
 }
 
 .article a {
     max-width: 100%;
+    transition: all .3s ease-in-out;
+
+}
+
+.article a:hover {
+    transform: translateY(-4px);
 }
 
 .article a img {
     border-radius: 26px;
     width: 100%;
+}
+
+
+
+/* Queuing-service */
+
+#queuing-service {
+    width: 100%;
+    background: #F7F9FC;
+    margin: 80px 0;
+    padding: 50px 0
+}
+
+
+.queuing-service .queuing-service-items {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.queuing-service .queuing-service-items .queuing-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.queuing-service .queuing-service-items .queuing-service-item:hover a {
+    background: #e6e6e6;
+}
+
+.queuing-service .queuing-service-items .queuing-service-item:hover::before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background: var(--primary);
+    bottom: -51px;
+
+}
+
+
+.queuing-service .queuing-service-items .queuing-service-item a {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 14px 1px #00000009;
+}
+
+.queuing-service .queuing-service-items .queuing-service-item span {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.queuing-service .queuing-service-line {
+
+    height: 2px;
+    width: 100%;
+    background: #ddd7d7;
+    margin: 48px 0;
+
 }
