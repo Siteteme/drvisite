@@ -7,7 +7,6 @@
 }
 
 body {
-
     font-family: iransansweb;
 }
 
@@ -18,6 +17,14 @@ body {
 
 #navbar {
     box-shadow: 0px 0px 26px 0px #1670981f;
+}
+
+#navbar .menu-humberger {
+    display: none;
+}
+
+.navbar .menu .icon-close {
+    display: none;
 }
 
 .navbar .logo img {
@@ -295,7 +302,7 @@ body {
 }
 
 .queuing-service .queuing-service-items .queuing-service-item:hover a {
-    background: #e6e6e6;
+    background: var(--primary);
 }
 
 .queuing-service .queuing-service-items .queuing-service-item:hover::before {
@@ -317,6 +324,14 @@ body {
     box-shadow: 0px 0px 14px 1px #00000009;
 }
 
+.queuing-service .queuing-service-items .queuing-service-item a svg {
+    fill: var(--primary);
+}
+
+.queuing-service .queuing-service-items .queuing-service-item a:hover svg {
+    fill: #fff;
+}
+
 .queuing-service .queuing-service-items .queuing-service-item span {
     font-size: 18px;
     font-weight: 700;
@@ -330,4 +345,70 @@ body {
     background: #ddd7d7;
     margin: 48px 0;
 
+}
+
+
+.queuing-service .queuing-service-carusels {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 26px 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 38px rgb(0 0 0 / 5%);
+}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box>img {
+    width: 153px;
+    height: 153px;
+    object-fit: cover;
+    border-radius: 100%;
+    margin-bottom: 13px;
+}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box .queuing-service-carusels-box-name {}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box .last-speek {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #c3c3c3;
+}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box hr {
+    margin: 15px 0;
+    background: #cbc8c8;
+    height: 1px;
+    width: 100%;
+    border: none;
+}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box .btn-blue {
+    border: none;
+    background: #12abf61c;
+    color: #1CAEF6;
+    font-family: iransansweb;
+    padding: 15px 16px;
+    border-radius: 5px;
+    margin: 8px 0;
+    width: 90%;
+    font-size: 17px;
+}
+
+.queuing-service .queuing-service-carusels .queuing-service-carusels-box .btn-orang {
+    background: #ffca5212;
+    color: #FFCA52;
+    border: none;
+    font-family: iransansweb;
+    padding: 15px 16px;
+    border-radius: 5px;
+    margin: 8px 0;
+    width: 90%;
+    font-size: 17px;
 }

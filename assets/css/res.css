@@ -43,14 +43,107 @@
     .navbar .menu {
         margin-right: -45px;
     }
+
+    .queuing-service .queuing-service-items {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+        gap: 25px;
+    }
+
+    .queuing-service .queuing-service-carusels {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
 }
 
 
 
 @media screen and (max-width: 768px) {
-    .navbar .menu {
-        display: none;
+
+    #navbar .menu-humberger {
+        display: block;
     }
+
+    .navbar .menu {
+        display: block;
+        position: relative;
+    }
+
+    .navbar .menu ul {
+        transition: all .3s ease;
+    }
+
+    .navbar .menu ul.active {
+        right: 0;
+        transition: all .3s ease;
+    }
+
+    .navbar .menu .icon-close {
+        display: block;
+        position: absolute;
+        left: 17px;
+        top: 18px;
+        max-width: 15px;
+        z-index: 999;
+    }
+
+    .navbar .menu ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        z-index: 99;
+        position: fixed;
+        background: #ffffff;
+        right: -50%;
+        width: 41%;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+
+    }
+
+    .navbar .menu ul li {
+        font-size: 16px;
+        margin: 3px 0;
+        padding: 2px 17px;
+        top: 52px;
+        position: relative;
+    }
+
+    .navbar .menu ul li:first-child {
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        line-height: 3;
+        background: #1894a71a;
+        border-radius: 7px;
+        height: 100%;
+        display: block;
+        transition: all .3s ease;
+
+    }
+
+    .navbar ul li:hover a {
+        background: var(--primary);
+        color: #fff;
+    }
+
+    .navbar ul li {
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+    .navbar ul li:hover {
+        background-color: transparent;
+        border-bottom: none;
+    }
+
+
+
 
     .navbar {
         display: flex;
@@ -63,13 +156,6 @@
         width: 25%;
     }
 
-    .services .services-items {
-        display: grid;
-        margin-top: 50px;
-        gap: 35px;
-        grid-template-rows: auto;
-        grid-template-columns: auto;
-    }
 
     .header .search-bar {
         margin-top: 25px;
@@ -127,7 +213,14 @@
     .services .services-items .services-item .services-item-desc {
         margin-right: 10px;
     }
+
 }
+
+
+
+
+
+
 
 
 
@@ -207,5 +300,23 @@
 
     .navbar .logo {
         width: 150px;
+    }
+
+    .queuing-service .queuing-service-items {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: auto auto;
+        gap: 25px;
+    }
+
+    .queuing-service .queuing-service-carusels {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+
+    .navbar .menu ul {
+        right: -86%;
+        width: 69%;
     }
 }
